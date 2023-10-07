@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-    baseURL: '/nikochaffin/',
     buildAssetsDir: 'nuxtAssets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
     head: {
       title: 'Niko Chaffin | Software Engineer',
@@ -17,7 +16,7 @@ export default defineNuxtConfig({
     },
   },
   experimental: {
-    payloadExtraction: false,
+    payloadExtraction: false, // Can't load the _payload.json file, so disable it
   },
   nitro: {
     serveStatic: true,
