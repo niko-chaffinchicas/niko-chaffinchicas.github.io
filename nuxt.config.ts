@@ -2,6 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
+    baseURL: 'nikochaffin.com',
+    buildAssetsDir: 'assets',
     head: {
       title: 'Niko Chaffin | Software Engineer',
       meta: [
