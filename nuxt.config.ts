@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-    baseURL: 'nikochaffin.com',
-    buildAssetsDir: 'assets',
+    baseURL: '/nikochaffin/',
+    buildAssetsDir: 'nuxtAssets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
     head: {
       title: 'Niko Chaffin | Software Engineer',
       meta: [
@@ -12,8 +12,14 @@ export default defineNuxtConfig({
         { hid: 'description', name: 'description', content: '' }
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+        { rel: 'icon', type: 'image/png', href: '/nikochaffin/favicon.png' }
       ]
-    }
-  }
+    },
+  },
+  experimental: {
+    payloadExtraction: false,
+  },
+  nitro: {
+    serveStatic: true,
+  },
 })
