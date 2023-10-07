@@ -11,7 +11,7 @@ export default defineNuxtConfig({
         { hid: 'description', name: 'description', content: '' }
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/nikochaffin/favicon.png' }
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ]
     },
   },
