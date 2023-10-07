@@ -1,11 +1,12 @@
 {
-  "name": "nuxt-app",
+  "name": "niko-chaffinchicas.github.io",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "set:cname": "echo \"nikochaffin.com\" > .output/public/CNAME",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "deploy": "nuxt generate && gh-pages -d .output/public"
